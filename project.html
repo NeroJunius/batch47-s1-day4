@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title> Project Page</title>
+    <link href="assets/project.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <img src="images/dumbways.png" alt="dumbways" >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getBlog(event)">
+            <center><h1>Create Project Page</h1></center>
+            <div>
+              <label for="title">Project Name</label>
+              <input id="title" class="input-text" />
+            </div>
+
+            <div class="date">
+              <div>
+                <label for="startDate">Start Date</label>
+                <input id="startDate" class="input-text" />
+              </div>
+              <div>
+                <label for="endDate">End Date</label>
+                <input id="endDate" class="input-text"/>
+              </div>
+            </div>
+            
+            <div>
+              <label for="projectDescription">Description</label>
+              <textarea id="projectDescription" class="input-text"></textarea>
+            </div>
+
+            <div>
+              <label for="technologies">Technologies</label>
+            </div>
+              
+            <div class="checkBox">
+              <div>
+                <input id="nodeCheck" class="nodeBox" type="checkbox" checked="checked">
+                <label for="nodeCheck">Node Js</label>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input id="nextCheck" class="nodeBox" type="checkbox" checked="checked">
+                <label for="nextCheck">Next Js</labe>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input id="typeCheck" class="nodeBox" type="checkbox" checked="checked">
+                <label for="typeCheck">TypeScript</label>
+                <span class="checkmark"></span>
+              </div>  
+              <div>
+                <input id="reactCheck" class="nodeBox" type="checkbox" checked="checked">
+                <label for="reactCheck">React Js</label>
+                <span class="checkmark"></span>
+              </div>
+            </div>   
+          
+            
+            <div>
+              <label>Upload Image</label>
+              <div class="inputImage">
+                <label for="imageProject">
+                  <input type="file" id="imageProject" name="filename">
+                </label> 
+              </div>
+            </div>
+
+            <div>
+              <button class="submitButton">Post Project</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    <hr class="line" />
+    <div class="projectDetail" id="project">
+    <!-- dynamic content would be here -->
+    <center><h1>My Project</h1></center>
+      <div class="listProject">
+        <div class="itemProject">
+          <div class="header">
+            <img src="images/assasin.png" alt="assasin" class="imageP"/>
+            <div class="titleP">
+              <b>
+              <a href="project-detail.html" target="_blank"
+              >Ameno ameno latire Latiremo Dori me</a>
+            </b>
+            </div>
+            <div class="detailP">
+              12 Jul 2021 22:30 WIB | Nafiisan N. Achmad
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:rgb(75, 70, 70)">1 minutes ago</p>
+            </div>
+          </div>
+          <div class="projectContent">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+              Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+            </p>
+          </div>
+          <div class="btnGroups">
+              <button class="btn">Edit</button>
+              <button class="btn">Delete</button>
+          </div>
+        </div>
+      </div>  
+    </div>
+    </body>
+      <script src="assets/project.js"></script>   
+</html>
+    

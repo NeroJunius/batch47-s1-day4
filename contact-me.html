@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact Me </title>
+        <link href="assets/contact-me.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="images/dumbways.png" alt="dumbways" >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">My Project</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </nav>
+
+        
+            <center><h1>GET IN TOUCH</h1></center>
+    
+
+       <!-- form contact me -->
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" class="input">
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" class="select">
+                    <option value="" hidden></option>
+                    <option>Let's Talk</option>
+                    <option>Let's Collaboration</option>
+                    <option>I am Hiring</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message" class="input"></textarea>
+            </div>
+
+            <div class="submitButton">
+                <b onclick="getData()">Submit</b>
+            </div>
+        </form>
+    </body>
+    <script src="assets/contactMe.js"></script>
+</html>
